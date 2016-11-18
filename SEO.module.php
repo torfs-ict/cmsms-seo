@@ -51,7 +51,7 @@ class SEO extends NetDesignModule {
     public function Install() {
         $this->RegisterSmartyPlugin('seoKeywords', 'function', 'SmartyKeywordsPlugin');
         $db = $this->MySQL();
-        $db->query("CREATE TABLE `#__module_seo_keywords` (`client` VARCHAR(255) NOT NULL, `keyword` VARCHAR(255) NOT NULL, PRIMARY KEY (`client`, `keyword`));");
+        $db->query("CREATE TABLE `#__module_seo_keywords` (`client` VARCHAR(255) NOT NULL, `keyword` VARCHAR(255) NOT NULL);");
         return false;
     }
 
