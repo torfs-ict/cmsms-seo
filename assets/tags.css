@@ -1,0 +1,7 @@
+#oe_mainarea ul.tagit {
+    margin-left: 0;
+}
+p.pagetext.small {
+    font-weight: normal;
+    font-size: 85%;
+}
